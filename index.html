@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aya's cream</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("z1.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Buka: 09.00 - 20.00</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"> Ruko Archives no.218, Jl.Artheri Galuh Mas, Karawang.</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT AYA'S CREAM</span></h5>
+    <p>"Selamat datang di Aya's Cream! Nikmati varian rasa es krim kami"</p>
+    <p>"Nikmati es krim segar dan berkualitas setiap hari!"</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Ice Cream yang rasanya beraneka ragam dengan tempat santai yang cocok untuk kumpul bersama teman-teman dan keluarga, harga yang ramah dan selalu ada promo setiap harinya"</i></p>
+      <p>Owner: Ms. Aya</p>
+    </div>
+    <img src="" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Buka:</strong> setiap hari, 09.00 - 20.00.</p>
+    <p><strong>Address:</strong> Ruko Archives no.218, Jl.Artheri Galuh Mas, Karawang.</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="#" onclick="openMenu(event, 'Ice Cream Cone');" id="myLink">
+        <div class="w3-col s6 tablink">Ice Cream Cone</div>
+      </a>
+      <a href="#" onclick="openMenu(event, 'Ice Cream Cup');">
+        <div class="w3-col s6 tablink">Ice Cream Cup</div>
+      </a>
+    </div>
+
+    <div id="Ice Cream Cone" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Strawberry</h5>
+      <p class="w3-text-grey">Rp. 10.000</p><br>
+    
+      <h5>Chocolate</h5>
+      <p class="w3-text-grey">Rp. 10.000</p><br>
+    
+      <h5>Vanilla</h5>
+      <p class="w3-text-grey">Rp. 10.000</p><br>
+    
+      <h5>Matcha</h5>
+      <p class="w3-text-grey">Rp. 10.000</p><br>
+    
+      <h5>Red Velvet</h5>
+      <p class="w3-text-grey">Rp. 10.000</p>
+    </div>
+
+    <div id="Ice Cream Cup" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Strawberry</h5>
+      <p class="w3-text-grey">Rp. 15.00</p><br>
+    
+      <h5>Chocolate</h5>
+      <p class="w3-text-grey">Rp. 15.00</p><br>
+    
+      <h5>Vanilla</h5>
+      <p class="w3-text-grey">Rp. 15.00</p><br>
+    
+      <h5>Matcha</h5>
+      <p class="w3-text-grey">Rp. 15.00</p><br>
+    
+      <h5>Red Velvet</h5>
+      <p class="w3-text-grey">Rp. 15.00</p>
+    </div>  
+    <img src="z3.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">DIMANAKAH TEMPATNYA?</span></h5>
+    <p>DISINI GUYS!.</p>
+    <img src="z2.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span>Aya's Cream hanya tersedia 1 outlet di Karawang.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>This website was made with W3schools Spaces. Make your own free website today!</p>
+  <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
